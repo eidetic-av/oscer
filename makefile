@@ -11,7 +11,7 @@ clean:
 	rm build/* -rf
 
 test:
-	cd test; go test -v
+	cd test; GO111MODULE=off go test -v
 
 all: src/oscer.go src/osc/osc.go
 	GO111MODULE=off GOOS=darwin  GOARCH=amd64 go build -o build/MacOSX/oscer oscer.go 
