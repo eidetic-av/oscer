@@ -1,5 +1,5 @@
 oscer: oscer.go osc/osc.go
-	go build oscer.go
+	GO111MODULE=off go build oscer.go
 
 test:
 	cd ../test; go test -v
